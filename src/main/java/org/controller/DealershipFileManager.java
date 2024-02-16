@@ -1,4 +1,6 @@
-package org.dealership;
+package org.controller;
+
+import org.models.Dealership;
 
 import java.io.File;
 import java.io.FileNotFoundException;

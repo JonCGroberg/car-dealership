@@ -1,4 +1,5 @@
-package org.dealership;
+package org.models;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,7 @@ public class Dealership {
     private String address;
     private String phone;
 
-    ArrayList<Vehicle> inventory = new ArrayList<Vehicle>();
+    ArrayList<Vehicle> inventory = new ArrayList<>();
 
     public Dealership(String name, String address, String phone) {
         this.name = name;
