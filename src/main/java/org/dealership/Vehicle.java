@@ -2,14 +2,14 @@ package org.dealership;
 
 public class Vehicle {
 
-    int vin;
-    int year;
+    private int vin;
+    private int year;
     int odometer;
     double price;
-    String color;
-    String make;
-    String model;
-    String vehicleType;
+    private  String color;
+    private  String make;
+    private  String model;
+    private  String vehicleType;
 
     public Vehicle(int vin, int year, int odometer, double price, String color, String make, String model, String vehicleType) {
         this.vin = vin;

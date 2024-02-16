@@ -16,34 +16,45 @@ public class Dealership {
         this.phone = phone;
     }
 
-    public List<Vehicle> getVehiclesByPrice(int min, int max){
-
-    }
-    public List<Vehicle> getVehiclesByMakeModel(String make, String model){
-
-    }
-    public List<Vehicle> getVehiclesByYear(String min, String max){
-
+    public List<Vehicle> getVehiclesByPrice(int min, int max) {
+        return null;
     }
 
-    public List<Vehicle> getVehiclesByColor(String color){
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
 
+        return null;
     }
 
-    public List<Vehicle> getVehiclesByMileage(int min, int max){
+    public List<Vehicle> getVehiclesByYear(String min, String max) {
 
+        return null;
     }
-    public List<Vehicle> getVehiclesByType(String vehicleType){
+
+    public List<Vehicle> getVehiclesByColor(String color) {
+        return null;
 
     }
 
-    public List<Vehicle> getAllVehicles(){
+    public List<Vehicle> getVehiclesByMileage(int min, int max) {
+        return null;
 
     }
-    public void addVehicle(){
+
+    public List<Vehicle> getVehiclesByType(String vehicleType) {
+
+        return null;
+    }
+
+    public List<Vehicle> getAllVehicles() {
+        return null;
 
     }
-    public void removeVehicle(){
+
+    public void addVehicle() {
+
+    }
+
+    public void removeVehicle() {
 
     }
 
