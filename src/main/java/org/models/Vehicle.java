@@ -26,7 +26,7 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "\tVin: " + vin+ "\t "+year + " " + color + " " + make + " " + model + " " + vehicleType + " \t" +odometer + " miles \t$" +price;
+        return year + " " + color + " " + make + " " + model + " " + vehicleType + "\t" + odometer + " miles $" + price + " Vin: " + vin;
 
     }
 }

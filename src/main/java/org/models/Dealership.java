@@ -2,7 +2,6 @@ package org.models;
 
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Dealership {
     private final String name;
@@ -17,37 +16,41 @@ public class Dealership {
         this.phone = phone;
     }
 
-    public List<Vehicle> getVehiclesByPrice(int min, int max) {
-        return null;
+    public String getName() {
+        return name;
     }
 
-    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
-
-        return null;
+    public ArrayList<Vehicle> getVehiclesByPrice(int min, int max) {
+        return new ArrayList<>();
     }
 
-    public List<Vehicle> getVehiclesByYear(String min, String max) {
-
-        return null;
-    }
-
-    public List<Vehicle> getVehiclesByColor(String color) {
-        return null;
-
-    }
-
-    public List<Vehicle> getVehiclesByMileage(int min, int max) {
-        return null;
-
-    }
-
-    public List<Vehicle> getVehiclesByType(String vehicleType) {
+    public ArrayList<Vehicle> getVehiclesByMakeModel(String make, String model) {
 
         return null;
     }
 
-    public List<Vehicle> getAllVehicles() {
+    public ArrayList<Vehicle> getVehiclesByYear(String min, String max) {
+
         return null;
+    }
+
+    public ArrayList<Vehicle> getVehiclesByColor(String color) {
+        return null;
+
+    }
+
+    public ArrayList<Vehicle> getVehiclesByMileage(int min, int max) {
+        return null;
+
+    }
+
+    public ArrayList<Vehicle> getVehiclesByType(String vehicleType) {
+
+        return null;
+    }
+
+    public ArrayList<Vehicle> getAllVehicles() {
+        return inventory;
 
     }
 
