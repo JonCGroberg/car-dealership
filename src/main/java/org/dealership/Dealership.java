@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dealership {
-    private String name;
+    private final String name;
     private String address;
     private String phone;
 
-    ArrayList<Vehicle> inventory;
+    ArrayList<Vehicle> inventory = new ArrayList<Vehicle>();
 
     public Dealership(String name, String address, String phone) {
         this.name = name;
@@ -50,12 +50,32 @@ public class Dealership {
 
     }
 
-    public void addVehicle() {
+    public void addVehicle(int vin, int dealerId, int year, String make, String model, String type, String color, int miles, int price) {
+        inventory.add(new Vehicle(vin, dealerId, year, make, model, type, color, miles, price));
+    }
 
+    public void addVehicle(String[] values) {
+        addVehicle(Integer.parseInt(values[0]), Integer.parseInt(values[1]), Integer.parseInt(values[2]), values[3], values[4], values[5], values[6], Integer.parseInt(values[7]), Integer.parseInt(values[8]));
     }
 
     public void removeVehicle() {
 
     }
+
+    @Override
+    public String toString() {
+        StringBuilder formattedString = new StringBuilder();
+        formattedString.append(name).append("\t\t");
+        formattedString.append(address).append("\t\t");
+        formattedString.append(phone);
+
+        formattedString.append("\nInventory:");
+        for (Vehicle vehicle : inventory) {
+            formattedString.append("\n").append(vehicle);
+        }
+
+        return formattedString.toString();
+    }
+
 
 }

@@ -3,16 +3,18 @@ package org.dealership;
 public class Vehicle {
 
     private int vin;
+    private int dealerId;
     private int year;
     int odometer;
     double price;
-    private  String color;
-    private  String make;
-    private  String model;
-    private  String vehicleType;
+    private String color;
+    private String make;
+    private String model;
+    private String vehicleType;
 
-    public Vehicle(int vin, int year, int odometer, double price, String color, String make, String model, String vehicleType) {
+    public Vehicle(int vin, int dealerId, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
+        this.dealerId = dealerId;
         this.year = year;
         this.odometer = odometer;
         this.price = price;
@@ -22,6 +24,10 @@ public class Vehicle {
         this.vehicleType = vehicleType;
     }
 
+    @Override
+    public String toString() {
+        return "\tVin: " + vin+ "\t "+year + " " + color + " " + make + " " + model + " " + vehicleType + " \t" +odometer + " miles \t$" +price;
 
+    }
 }
 
